@@ -4,7 +4,12 @@ import * as Styled from './styles';
 const Home = () => {
   return (
     <Styled.Container>
-      <Styled.BigText>Hello World</Styled.BigText>
+      <Styled.DotContainer>
+        <Styled.Dot />
+      </Styled.DotContainer>
+      <Styled.TextContainer>
+        <Styled.BigText>Hello World</Styled.BigText>
+      </Styled.TextContainer>
     </Styled.Container>
   );
 };
