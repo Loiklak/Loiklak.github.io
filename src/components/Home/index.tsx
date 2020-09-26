@@ -12,7 +12,7 @@ const Home = () => {
       </Styled.DotContainer>
       <Styled.TextContainer>
         <div />
-        <Styled.BigText>Hello World</Styled.BigText>
+        <Styled.BigText>Craftsman.</Styled.BigText>
       </Styled.TextContainer>
     </Styled.Container>
   );
