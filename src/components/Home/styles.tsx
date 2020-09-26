@@ -23,14 +23,14 @@ export const BigText = styled.span`
   z-index: 2;
   animation: ${animations.FadeIn} 2s;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 2.7s;
   opacity: 0;
+  position: relative;
+  right: -20vw;
 `;
 
 export const DotContainer = styled.div`
   position: fixed;
-  display: grid;
-  place-items: center;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -38,21 +38,25 @@ export const DotContainer = styled.div`
 `;
 
 export const Dot = styled.span`
-  height: min(100vw, 100vh);
-  width: min(100vw, 100vh);
-  background-color: #4f0099;
+  height: min(110vw, 110vh);
+  width: min(110vw, 110vh);
+  background-color: #e6ac00;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  align-items: flex-end;
   overflow: hidden;
   animation-fill-mode: forwards;
-  animation: ${animations.DotGrow('min(100vw, 100vh)')} 1.5s ease-in-out;
+  animation: ${animations.DotGrow} 1s ease-in-out;
 `;
 
 export const ImgInCircle = styled.img`
   max-height: 100%;
   max-width: 100%;
+  min-height: 80vh;
   animation: ${animations.FadeIn} 2s linear;
-  animation-delay: 2s;
+  animation-delay: 0.9s;
   animation-fill-mode: forwards;
   opacity: 0;
+  position: relative;
+  right: 10vw;
 `;

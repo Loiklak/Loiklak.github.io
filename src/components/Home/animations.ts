@@ -7,14 +7,12 @@ import { keyframes } from 'styled-components';
 /**
  * Make dot grow form radius=0 to specified radius
  */
-export const DotGrow = (radius: string) => keyframes`
+export const DotGrow = keyframes`
   0% {
-    height: 0;
-    width: 0;
+    transform: scale(0)
   } 
   100% {
-    height: ${radius};
-    width: ${radius};
+    transform: scale(1)
   }
 `;
 
@@ -24,7 +22,7 @@ export const DotGrow = (radius: string) => keyframes`
 export const FadeIn = keyframes`
   from {
     opacity: 0;
-    transform: translate(0, -20px)
+    transform: translate(0, 20px)
   } 
   to {
     opacity: 1;
