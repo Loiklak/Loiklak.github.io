@@ -18,7 +18,7 @@ export const TextContainer = styled.div`
 `;
 
 export const BigText = styled.span`
-  font-size: 8em;
+  font-size: ${(props) => props.theme.fontSize.headline};
   color: white;
   z-index: 2;
   animation: ${animations.FadeIn} 2s;
@@ -37,10 +37,12 @@ export const DotContainer = styled.div`
   z-index: 1;
 `;
 
+const dotRadius = 'min(110vw, 110vh)';
+
 export const Dot = styled.span`
-  height: min(110vw, 110vh);
-  width: min(110vw, 110vh);
-  background-color: #e6ac00;
+  height: ${dotRadius};
+  width: ${dotRadius};
+  background-color: ${(props) => props.theme.colors.primary};
   border-radius: 50%;
   display: flex;
   align-items: flex-end;
@@ -52,7 +54,6 @@ export const Dot = styled.span`
 export const ImgInCircle = styled.img`
   max-height: 100%;
   max-width: 100%;
-  min-height: 80vh;
   animation: ${animations.FadeIn} 2s linear;
   animation-delay: 0.9s;
   animation-fill-mode: forwards;
