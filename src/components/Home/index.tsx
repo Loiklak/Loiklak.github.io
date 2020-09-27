@@ -1,13 +1,12 @@
 import React from 'react';
 import * as Styled from './styles';
-import Pic from '../../assets/images/LoicNoBg.png';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <Styled.Container>
       <Styled.DotContainer>
         <Styled.Dot>
-          <Styled.ImgInCircle src={Pic} />
+          <Styled.ImgInCircle />
         </Styled.Dot>
       </Styled.DotContainer>
       <Styled.TextContainer>

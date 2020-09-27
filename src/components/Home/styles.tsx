@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import img from '../../assets/images/LoicNoBg.png';
 
 import {
   DotGrow,
@@ -44,7 +45,7 @@ export const DotContainer = styled.div`
   z-index: 1;
 `;
 
-const dotRadius = 'min(110vw, 110vh)';
+const dotRadius = 'min(100vw, 110vh)';
 
 export const Dot = styled.span`
   height: ${dotRadius};
@@ -59,9 +60,9 @@ export const Dot = styled.span`
     ${animationMapping[AnimatedElements.BIG_DOT].animationDuration} ease-in-out;
 `;
 
-export const ImgInCircle = styled.img`
-  max-height: 100%;
-  max-width: 100%;
+export const ImgInCircle = styled.div`
+  height: 90%;
+  width: 90%;
   animation: ${FadeIn}
     ${animationMapping[AnimatedElements.BIG_PIC_ME].animationDuration} linear;
   animation-delay: ${animationMapping[AnimatedElements.BIG_PIC_ME]
@@ -69,5 +70,7 @@ export const ImgInCircle = styled.img`
   animation-fill-mode: forwards;
   opacity: 0;
   position: relative;
-  right: 10vw;
+  background-image: url(${img});
+  background-size: 100%;
+  background-position-x: -8vw;
 `;
