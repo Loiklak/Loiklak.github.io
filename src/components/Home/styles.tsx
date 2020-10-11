@@ -5,7 +5,7 @@ import {
   DotGrow,
   FadeIn,
   AnimatedElements,
-  animationMapping,
+  formatAnimation,
 } from './animations';
 
 /**
@@ -27,11 +27,8 @@ export const BigText = styled.span`
   font-size: ${(props) => props.theme.fontSize.headline};
   color: white;
   z-index: 2;
-  animation: ${FadeIn}
-    ${animationMapping[AnimatedElements.BIG_TEXT].animationDuration};
+  ${formatAnimation(FadeIn, AnimatedElements.BIG_TEXT, 'linear')}
   animation-fill-mode: forwards;
-  animation-delay: ${animationMapping[AnimatedElements.BIG_TEXT]
-    .animationDelay};
   opacity: 0;
   position: relative;
   right: -20vw;
@@ -55,18 +52,14 @@ export const Dot = styled.span`
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  ${formatAnimation(DotGrow, AnimatedElements.BIG_DOT, 'ease-in-out')}
   animation-fill-mode: forwards;
-  animation: ${DotGrow}
-    ${animationMapping[AnimatedElements.BIG_DOT].animationDuration} ease-in-out;
 `;
 
 export const ImgInCircle = styled.div`
   height: 90%;
   width: 90%;
-  animation: ${FadeIn}
-    ${animationMapping[AnimatedElements.BIG_PIC_ME].animationDuration} linear;
-  animation-delay: ${animationMapping[AnimatedElements.BIG_PIC_ME]
-    .animationDelay};
+  ${formatAnimation(FadeIn, AnimatedElements.BIG_PIC_ME, 'linear')}
   animation-fill-mode: forwards;
   opacity: 0;
   position: relative;

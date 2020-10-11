@@ -1,4 +1,9 @@
-import { keyframes } from 'styled-components';
+import {
+  keyframes,
+  Keyframes,
+  css,
+  FlattenSimpleInterpolation,
+} from 'styled-components';
 
 /**
  * Keyframes
@@ -50,7 +55,7 @@ interface AnimationDescription {
 const animationOrder: AnimationDescription[] = [
   {
     name: AnimatedElements.BIG_DOT,
-    duration: 1,
+    duration: 1.5,
   },
   {
     name: AnimatedElements.BIG_PIC_ME,
@@ -66,6 +71,8 @@ interface AnimationMappingElement {
   animationDuration: string;
   animationDelay: string;
 }
+
+/** Maps an element name to its animation duration and delay */
 interface AnimationMapping {
   [animatedElement: string]: AnimationMappingElement;
 }
@@ -92,4 +99,24 @@ export const { animationMapping } = animationOrder.reduce<{
   }
 );
 
-console.log(animationMapping);
+/**
+ * Animations helpers
+ */
+
+/**
+ * Auto creates animation and animation delay for a given element
+ * @param animation Name of the keyframe
+ * @param elementName Name of the element to animate
+ * @param animationOptions Additional options for the animation besides keyframe and duration
+ */
+export function formatAnimation(
+  animation: Keyframes,
+  elementName: AnimatedElements,
+  animationOptions?: string
+): FlattenSimpleInterpolation {
+  return css`
+    animation: ${animation} ${animationMapping[elementName].animationDuration}
+      ${animationOptions};
+    animation-delay: ${animationMapping[elementName].animationDelay};
+  `;
+}
