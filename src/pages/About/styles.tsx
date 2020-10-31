@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import { createCSSAnimation } from '../../Animations/animationScheduler';
+import { FadeIn } from '../../Animations/keyframes';
+
+import { animationMap, elements } from './animations';
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -14,11 +18,15 @@ export const WelcomeText = styled.div`
   font-size: ${(props) => props.theme.fontSize.headline};
   text-align: center;
   margin: 50px;
+  opacity: 0;
+  ${createCSSAnimation(FadeIn, elements.HEADLINE, animationMap)}
 `;
 
 export const AboutDescription = styled.div`
   font-size: ${(props) => props.theme.fontSize.medium};
   text-align: center;
+  opacity: 0;
+  ${createCSSAnimation(FadeIn, elements.DESCRIPTION, animationMap)}
 `;
 
 export const PictureContainer = styled.div`
