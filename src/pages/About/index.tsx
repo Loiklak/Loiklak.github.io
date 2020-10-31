@@ -1,6 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { MyPicture } from '../../components/MyPicture';
+import { BigDot } from '../../components/BigDot';
+
 import * as Styled from './styles';
 
 export const About: React.FC = () => {
@@ -14,7 +17,11 @@ export const About: React.FC = () => {
           <div>{t('about.myDrive')}</div>
         </Styled.AboutDescription>
       </Styled.TextContainer>
-      <Styled.PictureContainer></Styled.PictureContainer>
+      <Styled.PictureContainer>
+        <BigDot dotRadius="400px">
+          <MyPicture />
+        </BigDot>
+      </Styled.PictureContainer>
     </Styled.AboutContainer>
   );
 };
