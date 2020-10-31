@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Text } from '../../components/Text';
+
 import * as Styled from './styles';
 
 export const About: React.FC = () => {
@@ -10,7 +12,10 @@ export const About: React.FC = () => {
       <Styled.TextContainer>
         <Styled.WelcomeText>{t('about.welcome')}</Styled.WelcomeText>
         <Styled.AboutDescription>
-          <div>{t('about.whoAmI')}</div>
+          <Text size="large">{t('about.IAm')}</Text>
+          <Text color="secondaryDark" size="large">
+            {t('about.LoicChau')}
+          </Text>
           <div>{t('about.myDrive')}</div>
         </Styled.AboutDescription>
       </Styled.TextContainer>
