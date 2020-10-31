@@ -7,7 +7,13 @@ export const About: React.FC = () => {
   const { t } = useTranslation();
   return (
     <Styled.AboutContainer>
-      <Styled.TextContainer>{t('about.welcome')}</Styled.TextContainer>
+      <Styled.TextContainer>
+        <Styled.WelcomeText>{t('about.welcome')}</Styled.WelcomeText>
+        <Styled.AboutDescription>
+          <div>{t('about.whoAmI')}</div>
+          <div>{t('about.myDrive')}</div>
+        </Styled.AboutDescription>
+      </Styled.TextContainer>
       <Styled.PictureContainer></Styled.PictureContainer>
     </Styled.AboutContainer>
   );

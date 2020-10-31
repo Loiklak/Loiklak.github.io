@@ -8,7 +8,17 @@ export const AboutContainer = styled.div`
 
 export const TextContainer = styled.div`
   flex: 2 1 400px;
-  background-color: red;
+`;
+
+export const WelcomeText = styled.div`
+  font-size: ${(props) => props.theme.fontSize.headline};
+  text-align: center;
+  margin: 50px;
+`;
+
+export const AboutDescription = styled.div`
+  font-size: ${(props) => props.theme.fontSize.medium};
+  text-align: center;
 `;
 
 export const PictureContainer = styled.div`
