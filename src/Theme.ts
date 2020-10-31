@@ -9,12 +9,12 @@ export const theme: DefaultTheme = {
   },
   // https://material.io/design/color/the-color-system.html#tools-for-picking-colors
   colors: {
-    primary: '#e6ac00',
-    primaryDark: '#e06b00',
-    primaryLight: '#ecdc41',
-    secondary: '#003ae6',
-    secondaryDark: '#0000bf',
-    secondaryLight: '#4962f7',
+    primary: '#1a73e8',
+    primaryDark: '##1f41b6',
+    primaryLight: '##34a4ff',
+    secondary: '##e88f1a',
+    secondaryDark: '##d15b0e',
+    secondaryLight: '##f0b755',
     background: '#ffffff',
     text: 'black',
     shadow: '#cecece',
