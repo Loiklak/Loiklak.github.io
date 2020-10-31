@@ -27,7 +27,7 @@ export const WelcomeText = styled.div`
 `;
 
 export const AboutDescription = styled.div`
-  font-size: ${(props) => props.theme.fontSize.medium};
+  font-size: ${(props) => props.theme.fontSize.large};
   text-align: center;
   opacity: 0;
   ${createCSSAnimation(FadeIn, elements.DESCRIPTION, textAnimationMap)}
@@ -47,4 +47,5 @@ export const AnimatedPicture = styled(MyPicture)`
 export const AnimatedDot = styled(BigDot)`
   transform: scale(0);
   ${createCSSAnimation(DotGrow, elements.CIRCLE, circleAnimationMap)};
+  margin: 10px;
 `;

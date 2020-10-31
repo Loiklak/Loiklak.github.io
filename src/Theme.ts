@@ -2,10 +2,10 @@ import { DefaultTheme } from 'styled-components';
 
 export const theme: DefaultTheme = {
   fontSize: {
-    headline: '6em',
-    large: '4em',
-    medium: '2em',
-    small: '1em',
+    headline: '60px',
+    large: '30px',
+    medium: '20px',
+    small: '16px',
   },
   // https://material.io/design/color/the-color-system.html#tools-for-picking-colors
   colors: {
