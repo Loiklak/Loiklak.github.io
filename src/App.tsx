@@ -2,11 +2,11 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './Theme';
 
-import Home from './components/Home';
+import { About } from './pages/About';
 
 const App = () => (
   <ThemeProvider theme={theme}>
-    <Home />
+    <About />
   </ThemeProvider>
 );
 
