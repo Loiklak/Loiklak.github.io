@@ -11,8 +11,11 @@ export const Navbar: React.FC<PropsType> = (props: PropsType) => {
   const { t } = useTranslation();
 
   return (
-    <Styled.NavbarContainer
-      className={props?.className}
-    ></Styled.NavbarContainer>
+    <Styled.NavbarContainer className={props?.className}>
+      <Styled.MenuItemsContainer>
+        <Styled.MenuItem>{t('navbar.about')}</Styled.MenuItem>
+        <Styled.MenuItem>{t('navbar.projects')}</Styled.MenuItem>
+      </Styled.MenuItemsContainer>
+    </Styled.NavbarContainer>
   );
 };
