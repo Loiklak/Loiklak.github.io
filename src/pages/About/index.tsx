@@ -1,9 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { MyPicture } from '../../components/MyPicture';
-import { BigDot } from '../../components/BigDot';
-
 import * as Styled from './styles';
 
 export const About: React.FC = () => {
@@ -18,9 +15,9 @@ export const About: React.FC = () => {
         </Styled.AboutDescription>
       </Styled.TextContainer>
       <Styled.PictureContainer>
-        <BigDot dotRadius="400px">
-          <MyPicture />
-        </BigDot>
+        <Styled.AnimatedDot dotRadius="400px">
+          <Styled.AnimatedPicture />
+        </Styled.AnimatedDot>
       </Styled.PictureContainer>
     </Styled.AboutContainer>
   );
