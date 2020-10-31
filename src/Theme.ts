@@ -2,8 +2,8 @@ import { DefaultTheme } from 'styled-components';
 
 export const theme: DefaultTheme = {
   fontSize: {
-    headline: '8em',
-    large: '3em',
+    headline: '6em',
+    large: '4em',
     medium: '2em',
     small: '1em',
   },
