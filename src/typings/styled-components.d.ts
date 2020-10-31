@@ -20,6 +20,11 @@ declare module 'styled-components' {
       secondaryDark: string;
       background: string;
       text: string;
+      shadow: string;
+    };
+
+    sizes: {
+      header: string;
     };
   }
 }
