@@ -35,6 +35,8 @@ export const AboutDescription = styled.div`
 
 export const PictureContainer = styled.div`
   flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
 `;
 
 export const AnimatedPicture = styled(MyPicture)`
