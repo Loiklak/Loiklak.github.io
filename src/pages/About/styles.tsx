@@ -10,12 +10,17 @@ import { circleAnimationMap, textAnimationMap, elements } from './animations';
 
 export const AboutContainer = styled.div`
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   height: 100vh;
 `;
 
 export const TextContainer = styled.div`
-  flex: 2 1 400px;
+  flex: 0 1 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 `;
 
 export const WelcomeText = styled.div`
@@ -33,8 +38,12 @@ export const AboutDescription = styled.div`
   ${createCSSAnimation(FadeIn, elements.DESCRIPTION, textAnimationMap)}
 `;
 
+export const Hey = styled.div`
+  margin-bottom: 20px;
+`;
+
 export const PictureContainer = styled.div`
-  flex: 1 1 400px;
+  flex: 0 1 400px;
   display: flex;
   justify-content: center;
 `;

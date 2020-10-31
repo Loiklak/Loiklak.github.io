@@ -7,7 +7,7 @@ interface PropsType {
   className?: string;
   color?: keyof DefaultTheme['colors'];
   size?: keyof DefaultTheme['fontSize'];
-  children: string;
+  children: React.ReactNode | React.ReactNode[];
 }
 
 export const Text: React.FC<PropsType> = ({
