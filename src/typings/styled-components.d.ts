@@ -18,6 +18,8 @@ declare module 'styled-components' {
       secondary: string;
       secondaryLight: string;
       secondaryDark: string;
+      background: string;
+      text: string;
     };
   }
 }
