@@ -1,14 +1,8 @@
 import { Keyframes, css, FlattenSimpleInterpolation } from 'styled-components';
 
-export enum AnimatedElements {
-  BIG_DOT = 'bigDot',
-  BIG_PIC_ME = 'bigPicMe',
-  BIG_TEXT = 'bigText',
-}
-
 /** Infos on an element to animate */
-interface AnimationDescription {
-  name: AnimatedElements;
+export interface AnimationDescription {
+  name: string;
   /** duration of the animation in seconds */
   duration: number;
 }
@@ -66,9 +60,9 @@ export function createAnimationMap(
  * @param elementName Name of the element to animate
  * @param animationOptions Additional options for the animation besides keyframe and duration
  */
-export function formatAnimation(
+export function createCSSAnimation(
   animation: Keyframes,
-  elementName: AnimatedElements,
+  elementName: string,
   animationMapping: AnimationMap,
   animationOptions?: string
 ): FlattenSimpleInterpolation {
