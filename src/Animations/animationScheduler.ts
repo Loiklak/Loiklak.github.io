@@ -70,5 +70,6 @@ export function createCSSAnimation(
     animation: ${animation} ${animationMapping[elementName].animationDuration}
       ${animationOptions};
     animation-delay: ${animationMapping[elementName].animationDelay};
+    animation-fill-mode: forwards;
   `;
 }
