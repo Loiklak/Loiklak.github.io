@@ -10,11 +10,16 @@ export const elements = {
   PICTURE: 'picture',
 };
 
-const AboutElementsToAnimate: AnimationDescription[] = [
-  { name: elements.HEADLINE, duration: 0.5 },
-  { name: elements.DESCRIPTION, duration: 0.2 },
-  { name: elements.CIRCLE, duration: 1 },
-  { name: elements.PICTURE, duration: 1 },
+const textElementsToAnimate: AnimationDescription[] = [
+  { name: elements.HEADLINE, duration: 0.8 },
+  { name: elements.DESCRIPTION, duration: 0.8 },
 ];
 
-export const animationMap = createAnimationMap(AboutElementsToAnimate);
+const circleElementsToAnimate: AnimationDescription[] = [
+  { name: elements.CIRCLE, duration: 0.8 },
+  { name: elements.PICTURE, duration: 0.8 },
+];
+
+export const textAnimationMap = createAnimationMap(textElementsToAnimate);
+
+export const circleAnimationMap = createAnimationMap(circleElementsToAnimate);
