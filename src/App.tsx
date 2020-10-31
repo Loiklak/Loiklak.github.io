@@ -4,7 +4,7 @@ import { theme } from './Theme';
 
 import { About } from './pages/About';
 
-const App = () => (
+const App: React.FC = () => (
   <ThemeProvider theme={theme}>
     <About />
   </ThemeProvider>
