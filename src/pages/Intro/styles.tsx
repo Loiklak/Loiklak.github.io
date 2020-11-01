@@ -58,4 +58,13 @@ export const AnimatedPicture = styled(MyPicture)`
 export const AnimatedDot = styled(BigDot)`
   transform: scale(0);
   ${createCSSAnimation(DotGrow, elements.CIRCLE, circleAnimationMap)};
+  margin: 10px;
+`;
+
+export const WhatIDoPictureContainer = styled.div`
+  flex: 0 1 600px;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  &: after;
 `;

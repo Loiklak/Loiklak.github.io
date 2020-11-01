@@ -2,13 +2,13 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './Theme';
 
-import { About } from './pages/About';
+import { Intro } from './pages/Intro';
 import { Navbar } from './components/Navbar';
 
 const App: React.FC = () => (
   <ThemeProvider theme={theme}>
     <Navbar />
-    <About />
+    <Intro />
   </ThemeProvider>
 );
 
