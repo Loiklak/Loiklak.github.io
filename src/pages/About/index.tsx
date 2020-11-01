@@ -12,22 +12,20 @@ export const About: React.FC = () => {
       <Styled.TextContainer>
         <Styled.WelcomeText>{t('about.welcome')}</Styled.WelcomeText>
         <Styled.AboutDescription>
-          <Styled.Hey>
-            <Text size="large">{t('about.iAm')}</Text>
-            <Text color="secondaryDark" size="large">
-              {t('about.LoicChau')}
-            </Text>
-          </Styled.Hey>
-          <div>
-            <Text size="large">{t('about.myDriveBeginning')} </Text>
-            <Text size="large" color="primary">
-              {t('about.faster')}
-            </Text>
-            <Text size="large"> {t('about.and')} </Text>
-            <Text size="large" color="primary">
-              {t('about.easier')}
-            </Text>
-          </div>
+          <Styled.TextBlock>
+            <Text>{t('about.iAm')}</Text>
+            <Text color="secondaryDark">{t('about.LoicChau')}</Text>
+          </Styled.TextBlock>
+          <Styled.TextBlock>
+            <Text>{t('about.myDriveBeginning')} </Text>
+            <Text color="primary">{t('about.faster')}</Text>
+            <Text> {t('about.and')} </Text>
+            <Text color="primary">{t('about.easier')}</Text>
+          </Styled.TextBlock>
+          <Styled.TextBlock>
+            <Text>{t('about.gamingLedTo')} </Text>
+            <Text color="secondaryDark">{t('about.softwareEngineering')}</Text>
+          </Styled.TextBlock>
         </Styled.AboutDescription>
       </Styled.TextContainer>
       <Styled.PictureContainer>

@@ -8,6 +8,9 @@ export const enTranslations = {
     'about.and': 'and',
     'about.faster': 'faster',
     'about.easier': 'easier',
+    'about.gamingLedTo':
+      'Spending time on my computer gaming thus led me to become interested in',
+    'about.softwareEngineering': 'software engineering',
     'navbar.about': 'About',
     'navbar.projects': 'My Projects',
   },

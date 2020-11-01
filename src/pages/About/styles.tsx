@@ -11,8 +11,9 @@ import { circleAnimationMap, textAnimationMap, elements } from './animations';
 export const AboutContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  height: 100vh;
+  height: auto;
 `;
 
 export const TextContainer = styled.div`
@@ -38,8 +39,9 @@ export const AboutDescription = styled.div`
   ${createCSSAnimation(FadeIn, elements.DESCRIPTION, textAnimationMap)}
 `;
 
-export const Hey = styled.div`
+export const TextBlock = styled.div`
   margin-bottom: 20px;
+  font-size: ${(props) => props.theme.fontSize.large};
 `;
 
 export const PictureContainer = styled.div`
@@ -56,5 +58,4 @@ export const AnimatedPicture = styled(MyPicture)`
 export const AnimatedDot = styled(BigDot)`
   transform: scale(0);
   ${createCSSAnimation(DotGrow, elements.CIRCLE, circleAnimationMap)};
-  margin: 10px;
 `;
