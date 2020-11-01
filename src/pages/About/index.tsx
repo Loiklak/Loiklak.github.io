@@ -24,7 +24,9 @@ export const About: React.FC = () => {
           </Styled.TextBlock>
           <Styled.TextBlock>
             <Text>{t('about.gamingLedTo')} </Text>
-            <Text color="secondaryDark">{t('about.softwareEngineering')}</Text>
+              <Text color="secondaryDark">
+                {t('about.softwareEngineering')}
+              </Text>
           </Styled.TextBlock>
         </Styled.AboutDescription>
       </Styled.TextContainer>
