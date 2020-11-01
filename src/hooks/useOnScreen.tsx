@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useEffect, MutableRefObject, useRef } from 'react';
+import { useState, useEffect, MutableRefObject } from 'react';
 
 // FOUND ON :
 // https://usehooks.com/useOnScreen/

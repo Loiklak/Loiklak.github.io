@@ -7,7 +7,6 @@ export const AboutContainer = styled.div<{ isOnScreen: boolean }>`
   flex-wrap: wrap;
   height: auto;
   margin-bottom: 500px;
-  ${(props) => !props.isOnScreen && 'visibility: hidden;'}
 `;
 
 export const TextContainer = styled.div`
