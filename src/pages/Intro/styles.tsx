@@ -66,4 +66,6 @@ export const DownloadCvLink = styled.a`
   border: solid ${(props) => props.theme.colors.primary};
   padding: 5px;
   text-decoration: none;
+  opacity: 0;
+  ${createCSSAnimation(FadeIn, elements.DESCRIPTION, textAnimationMap)}
 `;
