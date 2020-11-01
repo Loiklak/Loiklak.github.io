@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-export const AboutContainer = styled.div`
+export const AboutContainer = styled.div<{ isOnScreen: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   height: auto;
+  margin-bottom: 500px;
+  ${(props) => !props.isOnScreen && 'visibility: hidden;'}
 `;
 
 export const TextContainer = styled.div`

@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Element as ScrollAnchor } from 'react-scroll';
 
 import { routes } from '../../routes';
 import { Text } from '../../components/Text';
 import { ComputerAndMobilePicture } from '../../components/ComputerAndMobilePicture';
+import { useOnScreen } from '../../hooks/useOnScreen';
 
 import * as Styled from './styles';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
+  const aboutRef = useRef<HTMLDivElement>(null);
+
+  const isOnScreen = useOnScreen(aboutRef, '-350px');
+
   return (
     <>
       <ScrollAnchor name={routes.about} />
-      <Styled.AboutContainer>
+      <Styled.AboutContainer ref={aboutRef} isOnScreen={isOnScreen}>
         <Styled.WhatIDoPictureContainer>
           <Styled.SquareBehindPic></Styled.SquareBehindPic>
           <ComputerAndMobilePicture />

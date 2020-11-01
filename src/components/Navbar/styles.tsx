@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
 export const NavbarContainer = styled.div`
-  height: ${(props) => props.theme.sizes.header};
+  height: ${(props) => props.theme.sizes.header}px;
   width: 100%;
   box-shadow: 0px 1px 5px 1px ${(props) => props.theme.colors.shadow};
   display: flex;

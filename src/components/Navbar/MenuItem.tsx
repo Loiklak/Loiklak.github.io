@@ -15,7 +15,7 @@ export const MenuItem: React.FC<PropsType> = (props: PropsType) => {
       to={props.to}
       spy={true}
       smooth={true}
-      offset={-70}
+      offset={-theme.sizes.header}
       duration={500}
     >
       {props.children}

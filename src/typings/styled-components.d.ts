@@ -24,7 +24,7 @@ declare module 'styled-components' {
     };
 
     sizes: {
-      header: string;
+      header: number;
     };
   }
 }

@@ -9,10 +9,11 @@ import * as Styled from './styles';
 
 export const Intro: React.FC = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <ScrollAnchor name={routes.resume} />
-      <Styled.AboutContainer>
+      <Styled.IntroContainer>
         <Styled.TextContainer>
           <Styled.WelcomeText>{t('intro.welcome')}</Styled.WelcomeText>
           <Styled.AboutDescription>
@@ -35,7 +36,7 @@ export const Intro: React.FC = () => {
             <Styled.AnimatedPicture />
           </Styled.AnimatedDot>
         </Styled.PictureContainer>
-      </Styled.AboutContainer>
+      </Styled.IntroContainer>
     </>
   );
 };

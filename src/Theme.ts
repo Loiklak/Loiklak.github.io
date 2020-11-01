@@ -20,6 +20,6 @@ export const theme: DefaultTheme = {
     shadow: 'rgba(210,210,210,0.5)',
   },
   sizes: {
-    header: '70px',
+    header: 70,
   },
 };

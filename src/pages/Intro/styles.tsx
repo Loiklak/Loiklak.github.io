@@ -8,7 +8,7 @@ import { BigDot } from '../../components/BigDot';
 
 import { circleAnimationMap, textAnimationMap, elements } from './animations';
 
-export const AboutContainer = styled.div`
+export const IntroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,9 +65,10 @@ export const AnimatedDot = styled(BigDot)`
 
 export const DownloadCvLink = styled.a`
   margin-top: 10px;
-  border: solid ${(props) => props.theme.colors.primary};
+  border: solid 2px ${(props) => props.theme.colors.primary};
   padding: 5px;
   text-decoration: none;
   opacity: 0;
+  font-weight: 500;
   ${createCSSAnimation(FadeIn, elements.DESCRIPTION, textAnimationMap)}
 `;
