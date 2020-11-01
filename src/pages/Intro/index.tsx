@@ -17,12 +17,12 @@ export const Intro: React.FC = () => {
             <Text color="secondaryDark">{t('intro.LoicChau')}</Text>
           </Styled.TextBlock>
           <Styled.TextBlock>
-            <Text>I'm a software engineer</Text>
+            <Text>{t('intro.whatIAm')}</Text>
           </Styled.TextBlock>
         </Styled.AboutDescription>
         <Styled.DownloadCvLink href="LoicChauCv.pdf">
           <Text color="primary" size="small">
-            Download CV
+            {t('intro.downloadCv')}
           </Text>
         </Styled.DownloadCvLink>
       </Styled.TextContainer>

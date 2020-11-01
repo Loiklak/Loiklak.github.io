@@ -3,7 +3,7 @@ export const enTranslations = {
     'intro.welcome': 'Hey 👋😉',
     'intro.iAm': "I'm ",
     'intro.LoicChau': 'Loïc Chau',
-    'into.whatIAm': "I'm a software engineer",
+    'intro.whatIAm': 'Software engineer',
     'intro.downloadCv': 'Download CV',
     'about.myDriveBeginning':
       'What drives me is helping people achieve their goals',
