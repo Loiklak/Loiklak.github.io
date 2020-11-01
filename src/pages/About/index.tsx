@@ -17,14 +17,14 @@ export const About: React.FC = () => {
         </Styled.WhatIDoPictureContainer>
         <Styled.TextContainer>
           <Styled.TextBlock>
-            <Text>{t('intro.myDriveBeginning')} </Text>
-            <Text color="primary">{t('intro.faster')}</Text>
-            <Text> {t('intro.and')} </Text>
-            <Text color="primary">{t('intro.easier')}</Text>
+            <Text>{t('about.myDriveBeginning')} </Text>
+            <Text color="primary">{t('about.faster')}</Text>
+            <Text> {t('about.and')} </Text>
+            <Text color="primary">{t('about.easier')}</Text>
           </Styled.TextBlock>
           <Styled.TextBlock>
-            <Text>{t('intro.gamingLedTo')} </Text>
-            <Text color="secondaryDark">{t('intro.softwareEngineering')}</Text>
+            <Text>{t('about.gamingLedTo')} </Text>
+            <Text color="secondaryDark">{t('about.softwareEngineering')}</Text>
           </Styled.TextBlock>
         </Styled.TextContainer>
       </Styled.AboutContainer>
