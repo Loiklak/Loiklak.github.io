@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const NavbarContainer = styled.div`
   height: ${(props) => props.theme.sizes.header};
@@ -13,7 +14,7 @@ export const MenuItemsContainer = styled.div`
   margin-left: 100px;
 `;
 
-export const MenuItem = styled.span`
+export const MenuItem = styled(Link)`
   margin: 0 30px;
   font-size: ${(props) => props.theme.fontSize.medium};
 `;

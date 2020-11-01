@@ -14,6 +14,8 @@ export const AboutContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   height: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
 `;
 
 export const TextContainer = styled.div`

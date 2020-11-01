@@ -13,7 +13,8 @@ export const enTranslations = {
     'about.gamingLedTo':
       'Spending time on my computer gaming thus led me to become interested in',
     'about.softwareEngineering': 'software engineering',
-    'navbar.about': 'About',
+    'navbar.resume': 'Resume',
+    'navbar.about': 'About me',
     'navbar.projects': 'My Projects',
   },
 };

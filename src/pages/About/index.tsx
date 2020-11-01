@@ -1,6 +1,8 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Element as ScrollAnchor } from 'react-scroll';
 
+import { routes } from '../../routes';
 import { Text } from '../../components/Text';
 import { ComputerAndMobilePicture } from '../../components/ComputerAndMobilePicture';
 
@@ -10,6 +12,7 @@ export const About: React.FC = () => {
   const { t } = useTranslation();
   return (
     <>
+      <ScrollAnchor name={routes.about} />
       <Styled.AboutContainer>
         <Styled.WhatIDoPictureContainer>
           <Styled.SquareBehindPic></Styled.SquareBehindPic>
