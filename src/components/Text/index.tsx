@@ -12,8 +12,8 @@ interface PropsType {
 
 export const Text: React.FC<PropsType> = ({
   className,
-  color = 'text',
-  size = 'small',
+  color,
+  size,
   children,
 }: PropsType) => {
   return (
