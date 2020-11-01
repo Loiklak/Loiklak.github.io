@@ -17,7 +17,7 @@ export const theme: DefaultTheme = {
     secondaryLight: '#f0b755',
     background: '#ffffff',
     text: 'black',
-    shadow: '#cecece',
+    shadow: 'rgba(210,210,210,0.5)',
   },
   sizes: {
     header: '70px',

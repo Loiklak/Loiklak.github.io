@@ -1,6 +1,7 @@
 import React from 'react';
 
 import * as Styled from './styles';
+import { theme } from '../../Theme';
 
 interface PropsType {
   className?: string;
@@ -14,7 +15,7 @@ export const MenuItem: React.FC<PropsType> = (props: PropsType) => {
       to={props.to}
       spy={true}
       smooth={true}
-      offset={50}
+      offset={-70}
       duration={500}
     >
       {props.children}
