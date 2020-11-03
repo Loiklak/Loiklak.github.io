@@ -11,11 +11,13 @@ export const elements = {
 };
 
 const textElementsToAnimate: AnimationDescription[] = [
+  { name: 'delay', duration: 0.4 },
   { name: elements.HEADLINE, duration: 0.8 },
   { name: elements.DESCRIPTION, duration: 0.8 },
 ];
 
 const circleElementsToAnimate: AnimationDescription[] = [
+  { name: 'delay', duration: 0.4 },
   { name: elements.CIRCLE, duration: 0.8 },
   { name: elements.PICTURE, duration: 0.8 },
 ];
