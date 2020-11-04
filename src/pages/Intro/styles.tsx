@@ -9,6 +9,7 @@ import { BigDot } from '../../components/BigDot';
 import { circleAnimationMap, textAnimationMap, elements } from './animations';
 
 export const IntroContainer = styled.div`
+  padding: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
