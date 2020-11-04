@@ -29,7 +29,7 @@ export const TextContainer = styled.div`
 export const WelcomeText = styled.div`
   font-size: ${(props) => props.theme.fontSize.headline};
   text-align: center;
-  margin: 50px;
+  margin-bottom: 50px;
   opacity: 0;
   ${createCSSAnimation(FadeIn, elements.HEADLINE, textAnimationMap)}
 `;

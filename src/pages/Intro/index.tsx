@@ -22,7 +22,12 @@ export const Intro: React.FC = () => {
               <Text color="secondaryDark">{t('intro.LoicChau')}</Text>
             </Styled.TextBlock>
             <Styled.TextBlock>
+              <Text>{t('intro.myGoal')}</Text>
+            </Styled.TextBlock>
+            <Styled.TextBlock>
               <Text>{t('intro.whatIAm')}</Text>
+              <Text color="secondaryDark"> {t('intro.softwareEngineer')} </Text>
+              <Text>{t('intro.wink')}</Text>
             </Styled.TextBlock>
           </Styled.AboutDescription>
           <Styled.DownloadCvLink href="LoicChauCv.pdf">

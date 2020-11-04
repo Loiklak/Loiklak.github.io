@@ -1,10 +1,14 @@
 export const enTranslations = {
   translation: {
     intro: {
-      welcome: 'Hey 👋😉',
+      welcome: 'Hey 👋',
       iAm: "I'm ",
       LoicChau: 'Loïc Chau',
-      whatIAm: 'Software engineer',
+      myGoal:
+        'My ultimate goal is creating elegant✨ and impactful💥 experiences',
+      whatIAm: 'I just happen to be a',
+      softwareEngineer: 'Software Engineer',
+      wink: '😉',
       downloadCv: 'Download CV',
     },
     about: {
