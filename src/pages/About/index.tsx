@@ -2,30 +2,19 @@ import React from 'react';
 import { Element as ScrollAnchor } from 'react-scroll';
 
 import Image from '../../assets/images/MacbookAirOnCouch.jpg';
-
 import { routes } from '../../routes';
+
+import * as Styled from './styles';
 
 export const About: React.FC = () => {
   return (
-    <div style={{ padding: 16 }}>
+    <>
       <ScrollAnchor name={routes.about} />
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        <div
-          style={{ flex: '1 1 600px', display: 'flex', alignItems: 'center' }}
-        >
-          <img src={Image} style={{ height: 'auto', width: '100%' }} />
-        </div>
-        <div
-          style={{
-            flex: '1 1 600px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            textAlign: 'center',
-            padding: '32px',
-          }}
-        >
+      <Styled.AboutContainer>
+        <Styled.ImageContainer>
+          <Styled.Illustration src={Image} alt="Computer with code" />
+        </Styled.ImageContainer>
+        <Styled.AboutMe>
           <h1>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id magna
             congue, lacinia nulla vitae, ultricies eros. Sed tristique vel ipsum
@@ -58,9 +47,9 @@ export const About: React.FC = () => {
             varius aliquet viverra. Quisque tristique nisl mauris, id ornare
             risus cursus vitae.
           </p>
-        </div>
-      </div>
-    </div>
+        </Styled.AboutMe>
+      </Styled.AboutContainer>
+    </>
   );
 };
 
