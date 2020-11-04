@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Text } from '../../components/Text';
 
 export const AboutContainer = styled.div`
   padding: 16px;
@@ -23,5 +24,10 @@ export const AboutMe = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 32px;
+  padding: 0 8%;
+  box-sizing: border-box;
+`;
+
+export const SectionHeader = styled(Text)`
+  margin-bottom: 16px;
 `;
