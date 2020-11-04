@@ -16,9 +16,12 @@ export const Navbar: React.FC<PropsType> = (props: PropsType) => {
   return (
     <Styled.NavbarContainer className={props?.className}>
       <Styled.MenuItemsContainer>
-        <MenuItem to={routes.resume}>{t('navbar.resume')}</MenuItem>
-        <MenuItem to={routes.about}>{t('navbar.about')}</MenuItem>
-        <MenuItem to={routes.about}>{t('navbar.projects')}</MenuItem>
+        <MenuItem to={routes.resume} order={1}>
+          {t('navbar.resume')}
+        </MenuItem>
+        <MenuItem to={routes.about} order={2}>
+          {t('navbar.about')}
+        </MenuItem>
       </Styled.MenuItemsContainer>
     </Styled.NavbarContainer>
   );

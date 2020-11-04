@@ -7,11 +7,13 @@ interface PropsType {
   className?: string;
   to: string;
   children: React.ReactNode;
+  order: number;
 }
 
 export const MenuItem: React.FC<PropsType> = (props: PropsType) => {
   return (
     <Styled.MenuItem
+      order={props.order}
       to={props.to}
       spy={true}
       smooth={true}

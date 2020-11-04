@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
+import { createCSSAnimation } from '../../Animations/animationScheduler';
+import { FadeIn } from '../../Animations/keyframes';
+
+import { animationMap } from './animations';
+
 export const NavbarContainer = styled.div`
   height: ${(props) => props.theme.sizes.header}px;
   width: 100%;
@@ -18,7 +23,7 @@ export const MenuItemsContainer = styled.div`
   margin-left: 100px;
 `;
 
-export const MenuItem = styled(Link)`
+export const MenuItem = styled(Link)<{ order: number }>`
   margin: 0 30px;
   height: 100%;
   display: flex;
@@ -33,4 +38,7 @@ export const MenuItem = styled(Link)`
   /* Improve blurry animation on Chrome */
   backface-visibility: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
+
+  opacity: 0;
+  ${({ order }) => createCSSAnimation(FadeIn, `item${order}`, animationMap)}
 `;
