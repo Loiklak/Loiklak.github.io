@@ -1,13 +1,12 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable */
 import { useState, useEffect, MutableRefObject } from 'react';
 
 // FOUND ON :
 // https://usehooks.com/useOnScreen/
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function useOnScreen(ref: MutableRefObject<any>, rootMargin = '0px') {
   // State and setter for storing whether element is visible
-  const [hasIntersected, setIntersecting] = useState(false);
+  const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -27,5 +26,5 @@ export function useOnScreen(ref: MutableRefObject<any>, rootMargin = '0px') {
     };
   }, []); // Empty array ensures that effect is only run on mount and unmount
 
-  return hasIntersected;
+  return isIntersecting;
 }
