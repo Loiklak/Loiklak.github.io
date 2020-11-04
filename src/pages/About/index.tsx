@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Element as ScrollAnchor } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 
 import { Text } from '../../components/Text';
 import Image from '../../assets/images/MacbookAirOnCouch.jpg';
 import { routes } from '../../routes';
+import { useOnScreen } from '../../hooks/useOnScreen';
 
 import * as Styled from './styles';
 
 export const About: React.FC = () => {
   const { t } = useTranslation();
+
+  const textRef = useRef<HTMLDivElement>(null);
+  const isOnScreen = useOnScreen(textRef, '-50px');
 
   return (
     <>
@@ -18,13 +22,17 @@ export const About: React.FC = () => {
         <Styled.ImageContainer>
           <Styled.Illustration src={Image} alt="Computer with code" />
         </Styled.ImageContainer>
-        <Styled.AboutMe>
-          <Styled.SectionHeader size="headline">About me</Styled.SectionHeader>
-          <Text size="medium">
-            <p>{t('about.part1')}</p>
-            <p>{t('about.part2')}</p>
-            <p>{t('about.part3')}</p>
-          </Text>
+        <Styled.AboutMe isOnScreen={isOnScreen}>
+          <div ref={textRef}>
+            <Styled.SectionHeader size="headline">
+              About me
+            </Styled.SectionHeader>
+            <Text size="medium">
+              <p>{t('about.part1')}</p>
+              <p>{t('about.part2')}</p>
+              <p>{t('about.part3')}</p>
+            </Text>
+          </div>
         </Styled.AboutMe>
       </Styled.AboutContainer>
     </>

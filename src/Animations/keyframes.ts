@@ -13,7 +13,7 @@ export const DotGrow = keyframes`
 `;
 
 /**
- * Gradually appears while translating downwards
+ * Gradually appears while translating upwards
  */
 export const FadeIn = keyframes`
   from {
@@ -22,5 +22,18 @@ export const FadeIn = keyframes`
   } 
   to {
     opacity: 1;
+  }
+`;
+
+/**
+ * Gradually disappears while translating downwards
+ */
+export const FadeOut = keyframes`
+  from {
+   opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate(0, 20px);
   }
 `;
