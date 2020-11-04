@@ -32,7 +32,7 @@ export const Intro: React.FC = () => {
           </Styled.DownloadCvLink>
         </Styled.TextContainer>
         <Styled.PictureContainer>
-          <Styled.AnimatedDot dotRadius="400px">
+          <Styled.AnimatedDot dotRadius="600px">
             <Styled.AnimatedPicture />
           </Styled.AnimatedDot>
         </Styled.PictureContainer>

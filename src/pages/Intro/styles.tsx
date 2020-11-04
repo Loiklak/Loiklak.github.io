@@ -14,8 +14,8 @@ export const IntroContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   height: auto;
-  margin-bottom: 100px;
-  min-height: 80vh;
+  margin-bottom: ${(props) => 2 * props.theme.sizes.header}px;
+  min-height: calc(100vh - 3 * ${(props) => props.theme.sizes.header}px);
 `;
 
 export const TextContainer = styled.div`
