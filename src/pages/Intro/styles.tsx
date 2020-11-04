@@ -14,8 +14,8 @@ export const IntroContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   height: auto;
-  margin-top: 50px;
   margin-bottom: 100px;
+  min-height: 80vh;
 `;
 
 export const TextContainer = styled.div`
@@ -47,7 +47,7 @@ export const TextBlock = styled.div`
 `;
 
 export const PictureContainer = styled.div`
-  flex: 0 1 400px;
+  flex: 0 1 600px;
   display: flex;
   justify-content: center;
 `;
