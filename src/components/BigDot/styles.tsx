@@ -5,8 +5,10 @@ interface StyledProps {
 }
 
 export const Dot = styled.span<StyledProps>`
-  height: ${(props) => props.dotRadius};
-  width: ${(props) => props.dotRadius};
+  height: 80vw;
+  max-height: ${(props) => props.dotRadius};
+  width: 80vw;
+  max-width: ${(props) => props.dotRadius};
   background-color: ${(props) => props.theme.colors.primary};
   border-radius: 50%;
   display: flex;

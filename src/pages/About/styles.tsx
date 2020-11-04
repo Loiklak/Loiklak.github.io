@@ -4,7 +4,7 @@ import { Text } from '../../components/Text';
 export const AboutContainer = styled.div`
   padding: 16px;
   display: flex;
-  flew-wrap: wrap;
+  flex-wrap: wrap;
 `;
 
 export const ImageContainer = styled.div`

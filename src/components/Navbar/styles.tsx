@@ -20,7 +20,9 @@ export const NavbarContainer = styled.div`
 export const MenuItemsContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  @media (min-width: 600px) {
+    margin-left: 100px;
+  }
 `;
 
 export const MenuItem = styled(Link)<{ order: number }>`
