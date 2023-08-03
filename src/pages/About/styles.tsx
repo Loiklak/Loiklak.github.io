@@ -6,6 +6,7 @@ export const AboutContainer = styled.div`
   padding: 16px;
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 `;
 
 export const ImageContainer = styled.div`
